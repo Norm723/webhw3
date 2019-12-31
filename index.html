@@ -3,46 +3,37 @@
       <title>jQuery Example</title>
              <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
             <script type="text/javascript" src="app.js"></script>
+            <link rel="stylesheet" href="style.css">
    </head>
 	
    <body> 
      <div id="register" class="aleft">
-     <h3>Place Your Order</h3> 
-      <form>
-        <input type="text" name="item" id="item" placeholder="Item name"><br>        
-        <!-- <label for="pwd">Password </label> --><input type="number" name="quantity" id="quantity"><br>
-        <!-- <label for="email">E-mail </label> --><input type="email" name="email" id="email"><br>
-        Size:
-        <input type="radio" name="year" value="1" id="r1" checked> <label for="r1">1</label>        
-        <input type="radio" name="year" value="2" id="r2"> <label for="r2">2</label>
-        <input type="radio" name="year" value="3" id="r3"> <label for="r3">3</label>
-        <input type="radio" name="year" value="Other" id="r4"> <label for="r4">Other</label>
-        <br/>
-        
-    <input type="checkbox" name="sports" id="soccer">
-    <label for="soccer">Soccer</label>
-    <input type="checkbox" name="sports" id="cricket">
-    <label for="cricket">Cricket</label>
-    <input type="checkbox" name="sports" id="baseball">
-    <label for="baseball">Baseball</label>
-<br/>
-            <label for="file-select">Upload:</label>
-    <input type="file" name="upload" id="file-select">
-        <br/>
-         <label for="address">Address:</label>
-    <textarea rows="3" cols="30" name="address" id="address"></textarea>
-        <br/>
-        <label for="city">City:</label>
-            <select name="city" id="city">
-        <option value="sydney">Sydney</option>
-        <option value="melbourne">Melbourne</option>
-        <option value="cromwell">Cromwell</option>
-    </select>
-    <br/>
-        <input type="submit" value="Submit" id="btn-submit">
-      </form>  
-       
-       <h3>output:</h3>
-       <div id="output"></div>
-     </div>
+      <h3>Place Your Order</h3> 
+        <form>
+          <input type="text" name="item" id="item" placeholder="Item Name *"><br>        
+          <!-- <label for="pwd">Password </label> --><input type="number" name="quantity" id="quantity" placeholder="Quantity *"><br>
+          <!-- <label for="email">E-mail </label> --><input type="email" name="email" id="email" placeholder="Email *"><br>
+          <textarea rows="3" cols="17" name="message" id="message">Message</textarea><br>
+          <input type="radio" name="color" value="1" id="r1" checked> <label for="r1">White</label>        
+          <input type="radio" name="color" value="2" id="r2"> <label for="r2">Red</label>
+          <input type="radio" name="color" value="3" id="r3"> <label for="r3">Green</label>
+          <br/>
+          <label for="size">Size:</label>
+          <select name="size" id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+          <br/>
+          <input type="checkbox" name="ship" id="ship">
+          <label for="ship">Free Shipping</label>
+          <br/>
+          <input type="submit" value="Submit" id="btn-submit">
+        </form>    
+      </div>
+
+      <div id="result" class="aleft">
+          <h3>Result</h3>
+      </div>
+   </body>
 </html>
