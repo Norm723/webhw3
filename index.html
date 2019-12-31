@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <title>jQuery Example</title>
+             <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script type="text/javascript" src="app.js"></script>
+   </head>
+	
+   <body> 
+     <div id="register" class="aleft">
+     <h3>Place Your Order</h3> 
+      <form>
+        <input type="text" name="firstname" id="fname" placeholder="Item name"><br>        
+        <label for="email">E-mail </label><input type="email" name="email" id="email"><br>
+        <label for="pwd">Password </label><input type="password" name="pwd" id="pwd"><br>
+        Size:
+        <input type="radio" name="year" value="1" id="r1" checked> <label for="r1">1</label>        
+        <input type="radio" name="year" value="2" id="r2"> <label for="r2">2</label>
+        <input type="radio" name="year" value="3" id="r3"> <label for="r3">3</label>
+        <input type="radio" name="year" value="Other" id="r4"> <label for="r4">Other</label>
+        <br/>
+        
+    <input type="checkbox" name="sports" id="soccer">
+    <label for="soccer">Soccer</label>
+    <input type="checkbox" name="sports" id="cricket">
+    <label for="cricket">Cricket</label>
+    <input type="checkbox" name="sports" id="baseball">
+    <label for="baseball">Baseball</label>
+<br/>
+            <label for="file-select">Upload:</label>
+    <input type="file" name="upload" id="file-select">
+        <br/>
+         <label for="address">Address:</label>
+    <textarea rows="3" cols="30" name="address" id="address"></textarea>
+        <br/>
+        <label for="city">City:</label>
+            <select name="city" id="city">
+        <option value="sydney">Sydney</option>
+        <option value="melbourne">Melbourne</option>
+        <option value="cromwell">Cromwell</option>
+    </select>
+    <br/>
+        <input type="submit" value="Submit" id="btn-submit">
+      </form>  
+       
+       <h3>output:</h3>
+       <div id="output"></div>
+     </div>
+</html>
