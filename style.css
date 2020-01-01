@@ -14,7 +14,7 @@
 #register input[type="submit"]:hover{color:#14A;background:#fff;border-color:#14A;cursor:pointer;
 }
 
-.err{color:#D11;}
+.err{color:#D11;border: 1px solid #D11 ; text-align: right;}
 
 .aleft{display:inline-block;width:45%;margin:1%;padding:1%;vertical-align:top;text-align: center;}
 
@@ -31,4 +31,14 @@ textarea {
 .thanks {
   visibility: hidden;
   color: #7f7;
+}
+
+span {
+  position: absolute;
+}
+
+form, input, textarea, select{
+  margin:20px 3px 0 10px; 
+  font-size:18px;
+  position: relative;
 }
