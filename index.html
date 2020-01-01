@@ -1,6 +1,6 @@
 <html>
    <head>
-      <title>jQuery Example</title>
+      <title>HW 3</title>
              <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
             <script type="text/javascript" src="app.js"></script>
             <link rel="stylesheet" href="style.css">
@@ -14,9 +14,9 @@
           <!-- <label for="pwd">Password </label> --><input type="number" name="quantity" id="quantity" placeholder="Quantity *"><br>
           <!-- <label for="email">E-mail </label> --><input type="email" name="email" id="email" placeholder="Email *"><br>
           <textarea rows="3" cols="17" name="message" id="message">Message</textarea><br>
-          <input type="radio" name="color" value="1" id="r1" checked> <label for="r1">White</label>        
-          <input type="radio" name="color" value="2" id="r2"> <label for="r2">Red</label>
-          <input type="radio" name="color" value="3" id="r3"> <label for="r3">Green</label>
+          <input type="radio" name="color" value="White" id="r1" checked> <label for="r1">White</label>        
+          <input type="radio" name="color" value="Red" id="r2"> <label for="r2">Red</label>
+          <input type="radio" name="color" value="Green" id="r3"> <label for="r3">Green</label>
           <br/>
           <label for="size">Size:</label>
           <select name="size" id="size">
@@ -30,10 +30,12 @@
           <br/>
           <input type="submit" value="Submit" id="btn-submit">
         </form>    
+        <h3 class="thanks">Thank you, your order has been received</h3>
       </div>
 
-      <div id="result" class="aleft">
+      <div class="aleft">
           <h3>Result</h3>
+          <div id="result"></div>
       </div>
    </body>
 </html>
